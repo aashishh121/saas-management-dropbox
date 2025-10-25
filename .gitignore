@@ -1,0 +1,80 @@
+# =========================================
+# Java / Maven / Gradle common ignores
+# =========================================
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# =========================================
+# Maven specific
+# =========================================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# =========================================
+# Gradle specific
+# =========================================
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# =========================================
+# Eclipse / IntelliJ / VS Code IDE
+# =========================================
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Eclipse
+*.classpath
+*.project
+*.settings/
+
+# VS Code
+.vscode/
+
+# =========================================
+# OS-specific files
+# =========================================
+.DS_Store
+Thumbs.db
+
+# =========================================
+# Environment / credentials
+# =========================================
+.env
+application.properties
+*.key
+*.pem
+*.p12
+*.crt
+*.cer
+*.secret
+*.config.json
