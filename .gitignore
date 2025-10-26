@@ -79,6 +79,3 @@ application.properties
 *.cer
 *.secret
 *.config.json
-
-
-!src/main/resources/
