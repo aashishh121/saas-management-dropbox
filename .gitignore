@@ -3,10 +3,6 @@
 # =========================================
 
 
-# Ignore the real configuration file
-src/main/resources/application.properties
-
-
 # Compiled class files
 *.class
 
