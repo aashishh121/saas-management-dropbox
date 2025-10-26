@@ -71,7 +71,7 @@ Thumbs.db
 # Environment / credentials
 # =========================================
 .env
-application.properties
+src/main/resources/application.properties
 *.key
 *.pem
 *.p12
@@ -79,3 +79,6 @@ application.properties
 *.cer
 *.secret
 *.config.json
+
+# --- ---
+!src/main/resources/
