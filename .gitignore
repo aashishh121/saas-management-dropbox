@@ -71,6 +71,7 @@ Thumbs.db
 # Environment / credentials
 # =========================================
 .env
+application.properties
 *.key
 *.pem
 *.p12
