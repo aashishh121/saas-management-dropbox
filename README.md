@@ -19,33 +19,39 @@ It covers OAuth2 authentication and fetching organization/team information via D
     - Auth Type: OAuth2 (Authorization Code Flow)
 
 # Prerequisites
- Before running this project, make sure you have the following installed:
-    
+
+Before running this project, make sure you have the following installed:
+
     Java JDK 11+
     Apache Maven 3.6+
     Git
     Dropbox Developer Account
 
 # Setup Instructions
+
 Step 1
 Clone this repository and navigate to the project directory:
 
 Step 2
 Configure Dropbox credentials
 Create a file named application.properties inside src/main/resources/ and add:
- ```
-    client.id=YOUR_APP_CLIENT_ID
-    client.secret=YOUR_APP_CLIENT_SECRET
-    redirect.uri=YOUR_REDIRECT_URL
- ```
 
-Step 3 
+```
+   client.id=YOUR_APP_CLIENT_ID
+   client.secret=YOUR_APP_CLIENT_SECRET
+   redirect.uri=YOUR_REDIRECT_URL
+```
+
+Step 3
 Build and Run using Maven
+
 ```
 mvn clean install
 mvn clean compile exec:java
 ```
+
 If you get a missing main class error, ensure this line in pom.xml matches your main class:
+
 ```
 <mainClass>com.cloudeagle.dropbox.Main</mainClass>
 ```
@@ -60,17 +66,17 @@ If you get a missing main class error, ensure this line in pom.xml matches your 
 
 # Example Output
 
-  === Dropbox OAuth2 Demo ===
-  
+=== Dropbox OAuth2 Demo ===
+
     Go to the following URL and authorize access:
-    
+
     https://www.dropbox.com/oauth2/authorize?response_type=code&client_id=abc123&redirect_uri=http://localhost:8080/callback
-    
+
     Paste redirect URL here:
     >>> postman://app/oauth2/callback?code=Uq4RB9DTUPsAAAAAAAAAVKHzabagp0t1gdkJO0eEpVs
-    
+
     Access Token: sl.BCDeFgHiJkLmNoP
-    
+
     Team Info Response:
     {
     "name": "CloudEagle Test Org",
@@ -78,6 +84,7 @@ If you get a missing main class error, ensure this line in pom.xml matches your 
     }
 
 # Project Structure
+
 ```
 src/
  └── main/
@@ -97,5 +104,5 @@ src/
 
 # Notes
 
-    Add real credentials in your local environment only.
-    The redirect URI in your Dropbox app must exactly match the one in your config file.
+    - Add real credentials in your local environment only.
+    - The redirect URI in your Dropbox app must exactly match the one in your config file.
