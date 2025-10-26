@@ -34,9 +34,9 @@ Step 2
 Configure Dropbox credentials
 Create a file named application.properties inside src/main/resources/ and add:
  ```
-    dropbox.client_id=YOUR_APP_CLIENT_ID
-    dropbox.client_secret=YOUR_APP_CLIENT_SECRET
-    dropbox.redirect_uri=YOUR_REDIRECT_URL
+    client.id=YOUR_APP_CLIENT_ID
+    client.secret=YOUR_APP_CLIENT_SECRET
+    redirect.uri=YOUR_REDIRECT_URL
  ```
 
 Step 3 
