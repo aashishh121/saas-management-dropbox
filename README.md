@@ -93,5 +93,5 @@ src/
 
 # Notes
 
-  -> Add real credentials in your local environment only.
-  -> The redirect URI in your Dropbox app must exactly match the one in your config file.
+    Add real credentials in your local environment only.
+    The redirect URI in your Dropbox app must exactly match the one in your config file.
