@@ -45,6 +45,10 @@ Build and Run using Maven
 mvn clean install
 mvn clean compile exec:java
 ```
+If you get a missing main class error, ensure this line in pom.xml matches your main class:
+```
+<mainClass>com.cloudeagle.dropbox.Main</mainClass>
+```
 
 # OAuth Flow
 
